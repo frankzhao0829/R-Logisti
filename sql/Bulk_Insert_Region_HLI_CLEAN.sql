@@ -1,0 +1,15 @@
+use cpx
+
+GO
+
+BULK INSERT [dbo].[Region_HLI_CLEAN] FROM '/opt/mount1/EMEA_HLI_CLEAN.txt' WITH (FIRSTROW=2, FIELDTERMINATOR = '\t')
+
+GO
+
+BULK INSERT [dbo].[Region_HLI_CLEAN] FROM '/opt/mount1/AMS_HLI_CLEAN.txt' WITH (FIRSTROW=2, FIELDTERMINATOR = '\t')
+
+GO
+
+BULK INSERT [dbo].[Region_HLI_CLEAN] FROM '/opt/mount1/APJ_HLI_CLEAN.txt' WITH (FIRSTROW=2, FIELDTERMINATOR = '\t')
+
+GO
